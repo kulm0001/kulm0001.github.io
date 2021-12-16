@@ -1,130 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Document information -->
-        <meta charset="UTF-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles/icons.css" rel="stylesheet">
-        
-        <title>HTML Mock-up</title>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <!-- Added a header and put logo and form in it -->
-                <nav>
-                    <div class="Logo">
+<head>
+            <!--Document information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/icons.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>HTML Mock-Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+             <!-- Added a header and put logo and form in it -->
+            <div class="Logo">
                 <img src="images/logo.png" alt="Stars logo">
-                    </div>
+            </div>
+            <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" id="Home">Home</a></li>
+                    <li><a href="#" id="About">About Us</a></li>
+                    <li><a href="#" id="Services">Services</a></li>
+                    <li><a href="#" id="Team">Team</a></li>
+                    <li><a href="#" id="Contact">Contact</a></li>
                 </ul>
-                <form id="Form">
-                    <!-- Added a form and a class for it-->
-                    <input type="text" id="query" name="q" placeholder="Search">
-                    <button type="submit"><i class="icon icon-zoom"></i>
-                    </button>
-                </form>
             </nav>
+            <div class="searchform">
+                <form id="Form">
+             <!-- Added a form and a class for it-->
+                    <input type="text" id="query" name="q" placeholder="Search">
+                    <button><i class="icon icon-zoom"></i></button>
+                </form>
+            </div>
         </header>
-        <!-- I included all the following information in the main section -->
-            <main>
+                <!-- In the comments you asked me to put Overlay to the header, however if I do it, it does not
+                properly work, so I decided to keep the overlay in the main section -->
+         <main>
+            <article class="Overlay">
                 <div class="Banner">
-                <article class="Overlay">
-                    <img src="images/main-banner.jpg" alt="main banner pic">
+                 </div>
+                <div class="Welcome">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunnt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto concequuntur!</p>
-                    <button onclick="#" class="button.1"> Connect with us <i class="icon icon-right"></i> </button>
-                </article>
-                <!--I added article class to every button-->
+                    <button onclick="#" class="button-1"> Connect with us <i class="icon icon-right"></i></button>
                 </div>
-                <article class="About_Us">
+            </article>
+             <!--I added article class to every button-->
+            <article class="About_Us">
+                <div class="AUcontainer">
                     <img src="images/about-us.jpg" alt="about us pic">
+                </div>
+                <div class="AUtext">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                </article>
-                <article class="Services">
-                    <h2>Our Services</h2>
-                    <section class="Dig_Transformation">
+                </div>
+            </article>
+
+            <article class="Services">
+                <h2>Our Services</h2>
+                <div class="Service">
+                    <section class="Dig_Trasformation">
                         <img src="images/digital.jpg" alt="digital transformation pic">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                        <button onclick="#" class="button.2"> Digital Plans <i class="icon-right"></i></button>
+                        <button onclick="#" class="button-2"> Digital Plans <i class="icon icon-right"></i></button>
                     </section>
                     <section class="Marketing">
                         <img src="images/marketing.jpg" alt="marketing pic">
-                        <h4>Marketing</h4>
+                        <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                        <button onclick="#" class="button.3"> Marketing Plans <i class="icon-right"></i></button>
+                        <button onclick="#" class="button-3"> Marketing Plans <i class="icon icon-right"></i></button>
                     </section>
                     <section class="Video">
                         <img src="images/video.jpg" alt="video pic">
-                        <h5>Video Production</h5>
+                        <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                        <button onclick="#" class="button.4"> Marketing Plans <i class="icon-right"></i></button>
+                        <button onclick="#" class="button-4"> Video Plans <i class="icon icon-right"></i></button>
                     </section>
-                    <section class="Web_Development">
+                    <section class="Web_development">
                         <img src="images/web.jpg" alt="web development pic">
-                        <h6>Web Developmet</h6>
+                        <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                        <button onclick="#" class="button.5"> Marketing Plans <i class="icon-right"></i></button>
+                        <button onclick="#" class="button-5"> Web Plans <i class="icon icon-right"></i></button>
                     </section>
                     <section class="Print">
                         <img src="images/print.jpg" alt="print pic">
-                        <h2>Print</h2>
+                        <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                        <button onclick="#" class="button.6"> Marketing Plans <i class="icon-right"></i></button>
+                        <button onclick="#" class="button-6"> Print Plans <i class="icon icon-right"></i></button>
                     </section>
-                 </article>
-                <article class="Vision">
-                    <img src="images/vision.jpg" alt="our vision pic">
-                    <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                    <button onclick="#" class="button.7"> Learn More <i class="icon-right"></i></button>
-                </article>
-                    <article class="Team">
-                        <h2>Our Team</h2>
-                        <section class="John_Doe">
-                            <img src="images/john.jpg" alt="John pic">
-                            <h3>John Doe</h3>
-                            <span class="CEO"><em>CEO and Co-Owner</em></span>
+                </div>
+            </article>
+            <article class="Vision">
+                <h3> Our Vision </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
+                <button onclick="#" class="learnmore"> Learn More <i class="icon icon-right"></i></button>
+            </article>
+            <article class="Team">
+                <h2>Our Team</h2>
+                <section class="John_Doe">
+                    <img src="images/john.jpg" alt="John pic">
+                    <div class="John">
+                        <h3>John Doe</h3>
+                        <h4 class="CEO"><em>CEO and Co-Owner</em></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                        </section>
-                        <section class="Bob_Rite">
-                            <img src="images/bob.jpg" alt="Bob pic">
-                            <h3>Bob Rite</h3>
-                            <span class="CFO">CEO and Co-Owner</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
-                        </section>
-                    </article>
-                    <!--Creating the contact us form-->
-                    <article class="Contact_Us">
-                    <h2>Contact Us</h2>
-                    <div class="Contact_Form_Box">
-                        <form class="Box">
-                            <label for="fullname">Full Name</label>
-                            <input type="text" id="fullname" name="fullname">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message"></textarea>
-                            <input type="submit" name="submit" id="submit" value="Send">
-                        </form>
                     </div>
-                    <!--i am not sure if i used the right map-->
-                    <div class="Googlemaps">
-                        <h2>Location</h2>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1w1APSxLXk8v1nRQdFGRQPmnZl4Y&ehbc=2E312F" width="640" height="480" style="border:0;" allowfullscreen loading="lazy"></iframe>"
+                </section>
+                <section class="Bob_Rite">
+                    <img src="images/bob.jpg" alt="Bob pic">
+                    <div class="Bob">
+                        <h3>Bob Rite</h3>
+                        <h4 class="CFO">CFO and Co-Owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Pellentesque sit amet porttitor eget dolor morbi non. Quis risus sed vulputate odio ut enim.</p>
+                    </div>
+                </section>
+            </article>
+            <!--Creating the contact us form-->
+            <article class="Contact_Us">
+                <h2>Contact Us</h2>
+                <div class="Contactdesktopgrid">
+                    <div class="Desktopform">
+                        <h3>Send us a message</h3>
+                        <div class="Contact_Form_Box">
+                            <form class="formbox" action="index.html" method="post">
+                                <div>
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id="fullname" name="fullname">
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email">
+                                </div>
+                                <div>
+                                    <label for="message">Message</label>
+                                    <input type="text" id="message" name="message">
+                                </div>
+                                <button type="submit" form="formbox" name="submit" id="sumbit"
+                                    value="Send">Send</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="Hours_of_Operation">
-                        <!--created an hours of operation list-->
-                        <h2>Hours of operation</h2>
+                        <h3>Hours of operation</h3>
                         <table>
                             <thead>
                                 <tr>
@@ -144,13 +163,19 @@
                             </tbody>
                         </table>
                     </div>
-
-                </article>
-                 </main>
-            <footer>
-                <p>© Copyright Three Star Media, 2020</p>
-                <p>All images are taken from <a href="#">Unsplash</a></p>
-            </footer>
-        </div>
-    </body>
+                    <div class="Googlemaps">
+                        <h3>Location</h3>
+                        <div class="google">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1w1APSxLXk8v1nRQdFGRQPmnZl4Y&ehbc=2E312F" width="640" height="480" style="border:0;" allowfullscreen loading="lazy"></iframe>"
+                        </div>    
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; Copyright Three Star Media, 2020</p>
+            <p>All images are taken from <a href="#">Unsplash</a></p>
+        </footer>
+    </div>
+</body>
 </html>

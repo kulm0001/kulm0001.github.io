@@ -1,1 +1,572 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************************************
+   start
+***********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Noto+Serif:ital,wght@0,400;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+/***********************************************
+        font
+***********************************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 759px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+h1 {
+    line-height: 1.5;
+    color: white;
+    font-size: 5rem;
+    margin: 50px 20px 20px 20px;
+    font-weight: bold;
+}
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 20px 0px 10px 20px;
+}
+h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+    font-weight: 600;
+}
+/***********************************************
+    nav mobile
+***********************************************/
+header {
+    padding-bottom: 10px;
+    display: grid;
+    background-color: #222;
+}
+nav {
+    text-align: center;
+}
+#Home {
+    color: #222;
+    background-color: #c78c06;
+    ;
+    border: 1px solid #c78c06;
+    padding-bottom: 10px;
+    margin-top: -11px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#Form {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    width: 100%;
+    height: 2rem;
+}
+nav a {
+    text-decoration: none;
+    color: #c78c06;
+    grid-row-start: 1fr;
+    grid-row-end: 3fr;
+}
+li a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: transparent;
+
+}
+.Logo {
+    margin: 10px 10px 10px 10px;
+    background: #c78c06;
+    height: 97px;
+}
+.searchform input {
+    width: 100%;
+    margin-left: 10px;
+}
+.searchform button {
+    background-color: #222;
+    margin-right: 10px;
+    margin-left: -5px;
+    border: 1.5px solid #c78c06;
+}
+.searchform i {
+    color: #c78c06;
+    font-size: 20px;
+}
+/***********************************************
+   main part mobile
+***********************************************/
+.Overlay {
+    background-image: url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.Welcome {
+    background: rgba(34, 34, 34, .5);
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 80%;
+    align-content: flex-end;
+
+}
+.button-1 {
+    margin: 0px 0px 20px 20px;
+    background: #c78c06;
+    padding: 30px;
+    font-size: 20px;
+}
+h1 {
+    font-size: 4rem;
+}
+/***********************************************
+      about us mobile
+***********************************************/
+.About_Us {
+    background: #ffe6ac;
+    padding-bottom: 10px;
+}
+.About_Us img {
+    max-width: 95%;
+    margin: 10px;
+    height: auto;
+}
+.About_Us h2 {
+    padding-bottom: 10px;
+}
+p {
+    margin: 20px;
+}
+/***********************************************
+   our services mobile
+***********************************************/
+.Services button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    border: 1px solid #222;
+    background-color: #222;
+    padding: 20px;
+}
+.Services i {
+    padding-left: 5px;
+}
+.Services img {
+    width: 100%;
+}
+.Services section {
+    background: #ffe6ac;
+    margin-bottom: 10px;
+}
+/***********************************************
+   our vision mobile
+***********************************************/
+.Vision {
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+}
+.Vision button {
+    background: rgba(34, 34, 34, .5);
+    border: 1px solid #c78c06;
+    padding: 20px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.Vision {
+    color: white;
+}
+.Vision h3 {
+    padding-top: 30px;
+}
+.Vision i {
+    padding: 5px;
+}
+/***********************************************
+    our team mobile
+***********************************************/
+.Team h4 {
+    margin: 5px 0px 0px 20px;
+    border-bottom: 2px solid #c78c06;
+    border-width: 100%;
+    font-weight: bold;
+}
+.Team section {
+    background: #ffe6ac;
+    margin-bottom: 10px;
+}
+.Team img {
+    width: 100%;
+}
+.Team p {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+/***********************************************
+   contact us mobile
+***********************************************/
+#message {
+    min-height: 100px;
+}
+.Contact_Us form {
+    padding-bottom: 20px;
+}
+.Contact_Us button {
+    color: #c78c06;
+    background: #222;
+    margin-top: 10px;
+}
+.Contact_Us h2 {
+    margin-top: 40px;
+    margin-left: -20px;
+    padding-left: 2%;
+}
+.Contact_Us h3 {
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.Contact_Us input,
+textarea {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/***********************************************
+  hours of Operation mobile
+***********************************************/
+table {
+    width: 100%;
+    border: 1px solid #222;
+    margin-bottom: 20px;
+}
+th {
+    background: #ffe6ac;
+    border: 1px solid #222;
+    padding: 20px;
+}
+tr,
+td {
+    border: 1px solid #222;
+    padding: 20px;
+}
+/***********************************************
+   location mobile
+***********************************************/
+.Googlemaps{
+    padding-bottom: 20px;
+}
+.google {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+}
+.google iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/***********************************************
+     footer mobile
+***********************************************/
+footer {
+    background: #222;
+    color: #c78c06;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer a {
+    color: #c78c06;
+}
+/***********************************************
+    media query
+***********************************************/
+@media screen and (min-width: 760px) {
+    .container {
+        width: 1025px;
+        max-width: 1200px;
+    }
+
+    body {
+        font-size: 16px;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        margin-bottom: 20px
+        align-items: center;
+    }
+
+/***********************************************
+    nav desktop
+***********************************************/
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav input {
+        width: 50%;
+        flex-grow: 2;
+    }
+    #Home {
+        color: #222;
+        background-color: #c78c06;
+        ;
+        border: 1px solid #c78c06;
+        margin-top: 20px;
+        padding: 20px 30px 20px 30px;
+    }
+   ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    li {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15x;
+        font-size: 20px;
+    }
+    .searchform {
+        width: fit-content;
+    }
+
+/***********************************************
+   welcome desktop
+***********************************************/
+    .Welcome {
+     margin-left: 80px;
+     margin-right: 80px;
+}
+    .Overlay {
+        margin-top: -20px;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+/***********************************************
+   desktop about us
+***********************************************/
+    .About_Us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .AUtext {
+        width: 90%;
+        justify-self: start;
+    }
+    .AUtext h2 {
+        margin-left: 0px;
+        margin-bottom: -10px;
+    }
+    .AUtext p {
+        margin-left: 0px;
+    }
+    .AUcontainer {
+        width: 90%;
+        justify-self: end;
+    }
+/***********************************************
+  our services desktop
+***********************************************/
+    .Services {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .Services h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: -5px;
+    }
+    .Services h3 {
+        font-size: 1.5rem;
+    }
+    .Services img {
+        margin-bottom: 20px;
+    }
+    .Service {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: stretch;
+        column-gap: 10px;
+    }
+    .Dig_Trasformation {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 1;
+    }
+    .Marketing {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row: 1;
+    }
+    .Video {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+    }
+    .Web_development {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row: 2;
+    }
+    .Print {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row: 2;
+    }
+/***********************************************
+ our vision desktop
+***********************************************/
+.Vision {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+/***********************************************
+    our team desktop
+***********************************************/
+    .Team {
+        margin-top: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .Team h2 {
+        margin-left: -10px;
+        margin-bottom: 20px;
+    }
+    .Team h3 {
+        margin-top: 20px;
+    }
+     .Bob_Rite {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a b";
+        margin-top: -10px;
+    }
+    .Bob_Rite img {
+        grid-area: b;
+    }
+    .John_Doe {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+/***********************************************
+    contact us desktop
+***********************************************/
+.Hours_of_Operation {
+    margin-top:30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+.Contact_Us {
+    margin-left: 80px;
+    margin-right: 80px;
+    }
+
+.Contact_Us h2 {
+        padding-bottom: 30px;
+    }
+
+    .Contactdesktopgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .Contact_Form_Box button {
+        font-size: 20px;
+    }
+
+    .Desktopform {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1;
+    }
+
+    .google {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 1;
+        height:auto;
+        width: 100%;
+    }
+}
