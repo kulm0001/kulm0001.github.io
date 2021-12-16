@@ -546,7 +546,7 @@ footer a {
         padding-bottom: 30px;
     }
 
-    .Contactdesktopgrid {
+    .Contact {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
@@ -556,7 +556,7 @@ footer a {
         font-size: 20px;
     }
 
-    .Desktopform {
+    .contactfrom {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row: 1;
